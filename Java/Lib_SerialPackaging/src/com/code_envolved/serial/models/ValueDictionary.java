@@ -8,8 +8,17 @@ public abstract class  ValueDictionary {
 
         }
 
-        protected void setValue(int index, TypeStaticValue value){
-            values[index] = value;
+        protected void setValue(int index, byte value){
+            values[index] = new TypeStaticValue(value);
+        }
+        protected void setValue(int index, int value){
+            values[index] = new TypeStaticValue(value);
+        }
+        protected void setValue(int index, char value){
+            values[index] = new TypeStaticValue(value);
+        }
+        protected void setValue(int index, String value){
+            values[index] = new TypeStaticValue(value);
         }
 
         public TypeStaticValue getValue(int index){

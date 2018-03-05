@@ -1,28 +1,60 @@
 package com.code_envolved.serial.models;
 
-public abstract class  ValueDictionary {
+import java.util.EventListener;
 
-    private final TypeStaticValue[] values = new TypeStaticValue[256];
+public abstract class ValueDictionary {
 
-        public ValueDictionary(){
+    private final TypeStaticValue[] _values = new TypeStaticValue[256];
+
+    private ValueColelctionChangedEventLister _lister = null;
+
+    public ValueDictionary() {
+
+    }
+
+    public void setValueColelctionChangedEventLister(ValueColelctionChangedEventLister l){
+        _lister = l;
+    }
+
+    protected void setValue(int index, byte value) {
+        _values[index] = new TypeStaticValue(value);
+        triggerListner(index);
+    }
+
+    protected void setValue(int index, int value) {
+        _values[index] = new TypeStaticValue(value);
+        triggerListner(index);
+    }
+
+    protected void setValue(int index, char value) {
+        _values[index] = new TypeStaticValue(value);
+        triggerListner(index);
+    }
+
+    protected void setValue(int index, String value) {
+        _values[index] = new TypeStaticValue(value);
+        triggerListner(index);
+    }
+
+    protected void setValue(int index, TypeStaticValue value) {
+        _values[index] = value;
+        triggerListner(index);
+    }
+
+    public TypeStaticValue getValue(int index) {
+        return _values[index];
+    }
+
+    private void triggerListner(int index){
+        if(_lister != null){
+            _lister.onCollecionChanged(index);
+        }
+    }
+
+    public static class ValueColelctionChangedEventLister implements EventListener{
+        public void onCollecionChanged(int index){
 
         }
-
-        protected void setValue(int index, byte value){
-            values[index] = new TypeStaticValue(value);
-        }
-        protected void setValue(int index, int value){
-            values[index] = new TypeStaticValue(value);
-        }
-        protected void setValue(int index, char value){
-            values[index] = new TypeStaticValue(value);
-        }
-        protected void setValue(int index, String value){
-            values[index] = new TypeStaticValue(value);
-        }
-
-        public TypeStaticValue getValue(int index){
-            return values[index];
-        }
+    }
 
 }

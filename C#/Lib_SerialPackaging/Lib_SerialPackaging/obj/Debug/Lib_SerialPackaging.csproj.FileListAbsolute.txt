@@ -1,0 +1,7 @@
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\bin\Debug\Lib_SerialPackaging.exe.config
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\bin\Debug\Lib_SerialPackaging.exe
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\bin\Debug\Lib_SerialPackaging.pdb
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\obj\Debug\Lib_SerialPackaging.csprojResolveAssemblyReference.cache
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\obj\Debug\Lib_SerialPackaging.csproj.CoreCompileInputs.cache
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\obj\Debug\Lib_SerialPackaging.exe
+C:\Github\CodeEnvolved\C#\Lib_SerialPackaging\Lib_SerialPackaging\obj\Debug\Lib_SerialPackaging.pdb

@@ -1,5 +1,5 @@
 #Download
-[Download](https://raw.githubusercontent.com/downloads/marnick-hartgers/CodeEnvolved/master/Arduino/Lib_Timers/Lib_Timers.ino)
+[Download](https://raw.githubusercontent.com/marnick-hartgers/CodeEnvolved/master/Arduino/Lib_Timers/Lib_Timers.zip)
 
 ### Algemene instalatie van een lib. 
 Download de file of clone de repo.

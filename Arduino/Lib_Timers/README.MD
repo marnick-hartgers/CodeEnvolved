@@ -1,6 +1,5 @@
-# Librarys documentatie
-### FIRST!
-Ben dyslectisch as fuck
+#Download
+[Download](https://raw.githubusercontent.com/downloads/marnick-hartgers/CodeEnvolved/master/Arduino/Lib_Timers/Lib_Timers.ino)
 
 ### Algemene instalatie van een lib. 
 Download de file of clone de repo.

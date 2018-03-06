@@ -27,10 +27,10 @@ void serialSendChar(byte key, unsigned char value) {
 
 void serialSendString(byte key, String value) {
   unsigned int datalength = value.length();
-  unsigned int totalLength = 5 + value.length();
+  unsigned int totalLength = 7 + value.length();
   byte data [totalLength] = {startByte, totalLength >> 8, totalLength, key, dataTypeString,datalength >> 8, datalength};
   for (int i = 0; i < value.length(); i++) {
-    data[i + 5] = value[i];
+    data[i + 7] = value[i];
   }
   writeBuffer(data, totalLength);
 }

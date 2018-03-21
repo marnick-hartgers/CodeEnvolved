@@ -28,6 +28,7 @@ struct MatrixDisplayController {
     
     digitalWrite(firLatch, HIGH);
     digitalWrite(secLatch, HIGH);
+    delay(3);
     colIndex++;
     if(colIndex == 7){
       colIndex = 0;

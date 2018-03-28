@@ -1,3 +1,8 @@
+/*
+ * Made by Marnick Hartgers
+ * https://github.com/marnick-hartgers/CodeEnvolved/blob/master/Arduino/Lib_Button/Lib_Button.ino
+ */
+
 #define NUM_BUTTONS 10
 
 struct ButtonSetting{

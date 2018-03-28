@@ -1,3 +1,9 @@
+/*
+ * Made by Marnick Hartgers
+ * https://github.com/marnick-hartgers/CodeEnvolved/blob/master/Arduino/Lib_SerialPackagingDev/Arduino_SerialPackagingDev/Lib_SerialPackaging.ino
+ */
+
+
 #define startByte B10101010
 #define sendBufferSize 512
 

@@ -1,7 +1,8 @@
 /*
- * Credits to Marnick Hartgers
- * https://github.com/marnick-hartgers/ESD_HAN/blob/master/Lib_HAN/Lib_ShiftDisplay.ino
+ * Made by Marnick Hartgers
+ * https://github.com/marnick-hartgers/CodeEnvolved/blob/master/Arduino/Lib_ShiftDisplay/Lib_ShiftDisplay.ino
  */
+
 byte currentDisplayData[2] = {0, 0};
 //Init's the ports used to control the display
 void initShiftLed(int data, int clock, int master) {

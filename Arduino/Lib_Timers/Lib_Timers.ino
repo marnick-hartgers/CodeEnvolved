@@ -1,6 +1,6 @@
 /*
- * Credits to Marnick Hartgers
- * https://github.com/marnick-hartgers/ESD_HAN/blob/master/Lib_HAN/Lib_Timers.ino
+ * Made by Marnick Hartgers
+ * https://github.com/marnick-hartgers/CodeEnvolved/blob/master/Arduino/Lib_Timers/Lib_Timers.ino
  */
 
 #define NUM_COUNTERS 10

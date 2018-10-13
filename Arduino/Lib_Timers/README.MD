@@ -4,6 +4,10 @@
 ### Algemene instalatie van een lib. 
 Download de file of clone de repo.
 Sleep het bestand in de sketch folder van je arduino project.
+Include het bestand met de volgende regel:
+````C
+#include "Lib_Timers.h"
+````
 DONE!
 
 ## Timers lib
@@ -34,7 +38,7 @@ void timerCallback(){
     //Do things every 500ms
 }
 ````
-In de Lib_Timers.ino file vind de deze regel
+In de Lib_Timers.h file vind de deze regel
 ````C
 #define NUM_COUNTERS 10
 ````

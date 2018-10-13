@@ -5,16 +5,16 @@ MatrixDisplayController c;
 void setup() {
   
   c.init();
-  c.setPixel(0,0, true);
-  c.setPixel(0,1, true);
-  c.setPixel(1,2, true);
-  c.setPixel(2,3, true);
-  c.setPixel(3,4, true);
+  for(int x = 0; x < 5;x++){
+      for(int y = 0; y < 7;y++){
+      c.setPixel(x,y, (x+y) % 2 == 0);
+    }
+  }
+  
 
-  c.setPixel(4,5, true);
-  c.setPixel(4,6, true);
 }
 
 void loop() {
   c.draw();
+  delay(500);
 }

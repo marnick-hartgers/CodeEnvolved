@@ -1,6 +1,6 @@
 /*
- * Credits to Marnick Hartgers
- * https://github.com/marnick-hartgers/ESD_HAN/blob/master/Lib_HAN/Lib_SimpleLED.ino
+ * Made by Marnick Hartgers
+ * https://github.com/marnick-hartgers/CodeEnvolved/blob/master/Arduino/Lib_SimpleLed/Lib_SimpleLED.ino
  */
 struct SimpleLedLayout {
   int numSimpleLEDs;

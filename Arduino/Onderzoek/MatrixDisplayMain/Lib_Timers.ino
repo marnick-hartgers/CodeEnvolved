@@ -8,7 +8,7 @@
 
 struct TimerObject{
   long interval = -1;
-  unsigned long startTime = 0;
+  long startTime = 0;
   void (*callback)(void);
 };
 
@@ -37,8 +37,7 @@ void intervalTimer(int timerIndex, long interval){
 
 void maintainTimers(){
   for(int t = 0; t < NUM_COUNTERS;t++){
-    unsigned long timeExpire = timers[t].startTime + (unsigned long)timers[t].interval;
-    if(timers[t].interval != -1 && timeExpire < millis()){
+    if(timers[t].interval != -1 && (timers[t].startTime + timers[t].interval) < millis()){
       timers[t].callback();
       timers[t].startTime = millis();
     }
